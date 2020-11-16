@@ -60,19 +60,19 @@ margin-top:20px;
 `;
 
 export const Messages = styled.div`
+
   margin-top:10px;
+  
   flex:1;
   margin-left: 21px;
-  max-height: 20px;
-  height: 30px;
-  width:600px;
+  height: auto;
+  width:550px;
   border-radius: 5px 5px 5px 5px;
   color: #3A3A3A;
   padding: 24px 24px;
 `;
 
 export const User = styled(Messages)`
-  
   background: #04D361;
   color: #000;
   text-align: end;
