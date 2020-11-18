@@ -8,7 +8,6 @@ const Dashboard = () => {
   const [inputError, setInputError] = useState('');
   const[message, setMessage] = useState('');
   const [chat, setChat] = useState([]);
-  const [enabledButtom, setEnabledButtom] = useState(true);
 
   useEffect(() => {scrollWin()}, [chat])
   function scrollWin() {
