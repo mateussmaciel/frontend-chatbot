@@ -1,0 +1,8 @@
+{
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/08560c46-768d-4e02-873c-48ee9ec4bb42/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/chatBotFront",
+  "appService.deploySubpath": "."
+}
