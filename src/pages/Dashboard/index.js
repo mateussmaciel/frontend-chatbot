@@ -8,7 +8,6 @@ const Dashboard = () => {
   const [inputError, setInputError] = useState('');
   const[message, setMessage] = useState('');
   const [chat, setChat] = useState([]);
-  const [enabledButtom, setEnabledButtom] = useState(true);
 
   useEffect(() => {scrollWin()}, [chat])
   function scrollWin() {
@@ -70,12 +69,22 @@ const Dashboard = () => {
       
       <div style={{display:'flex', flexDirection:'column',width:'48%', marginLeft:'20px', maxHeight: '655px'}}>
       <h1>
-        Consultor Tecnológico Watson Assistent
+      Consultor Tecnológico
       </h1>
       <h4 style={{lineHeight: 1.5, overflow: 'auto', maxHeight: '550px', paddingRight:'10px'}}>
       <button type="button" onClick={() => EncerraSession()} >Encerrar sessão</button>
-      <p align="justify">Cras ut urna laoreet orci gravida maximus. Phasellus venenatis dapibus lobortis. Fusce efficitur pharetra aliquet. Morbi consequat tortor eros, gravida commodo erat dapibus pretium. Sed lacinia nec purus sed tempus. Donec at porttitor velit, lobortis fermentum velit. Phasellus turpis nisl, auctor in lobortis vitae, rhoncus lacinia sem. Nunc dolor sapien, varius quis malesuada quis, vestibulum ac tellus.</p>
-      <p align="justify">Sed at mi in ex feugiat tristique. Morbi id congue nulla. Praesent eleifend tincidunt purus a laoreet. Vivamus a lorem nisl. Sed mollis feugiat diam ac gravida. Vivamus sit amet dolor odio. Etiam auctor, lorem eget accumsan accumsan, sapien lectus scelerisque risus, nec consequat orci turpis et purus. Donec sollicitudin posuere arcu, quis faucibus sapien bibendum sit amet. Proin dui purus, volutpat vitae consectetur a, finibus non quam. Integer laoreet, nulla eget sodales bibendum, tortor arcu ornare eros, id rhoncus mi mauris in lacus. Ut ultricies erat non tortor ultrices tempor. Aliquam tempor vitae metus lobortis fringilla. Nam sed convallis mi, at faucibus urna. Cras et ullamcorper dui, sed vehicula tellus.</p>
+      <p align="justify">O nosso chatbot tem como objetivo te ajudar a sanar dúvidas
+quanto a compra de um novo eletronico, seja ele um celular,
+notebook, tablet, smartwatch ou um novo computador.</p>
+      <p>Você pode me perguntar coisas como: </p>
+      <p align="justify">Ajuda 
+Quero comprar um celular / notebook / tablet / smartwatch
+Quero uma analise de um  celular / notebook / tablet / smartwatch 
+Quero montar/comprar um computador intel/amd  </p>
+<p align="justify">O botão encerrar sessão é caso eu não consiga responder 
+suas dúvidas mais malucas e filosóficas, no caso disso 
+acontecer não tenha dúvida em clicar.</p>
+<p align="justify">Espero que consiga te ajudar nessa jornada.</p>
 
       </h4>
       </div>
